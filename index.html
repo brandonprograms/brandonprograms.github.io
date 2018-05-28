@@ -11,6 +11,9 @@
       a {
         color: #f00;
       }
+      p {
+        clear: left;
+      }
 
       /* HERO STYLES */
       .full-hero {
@@ -29,13 +32,14 @@
       /* BIO STYLES */
       .bio-wrapper {
         font-size: 24px;
+        overflow: hidden;
       }
-      .bio-wrapper: after {
-        visibility: hidden;
+      .bio-wrapper::after {
+        visibility: visible;
         display: block;
-        font-size: 0;
+        font-size: 100px;
         content: " ";
-        clear: both;
+        clear: right;
         height: 0;
       }
       .bio-box {
