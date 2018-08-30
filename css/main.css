@@ -57,9 +57,11 @@ body {
 h1 {
   font-size: 7vw;
   margin-top: 0;
+  text-align: center;
 }
 h2 {
   font-size: 2em;
+  text-align: center;
 }
 a {
   color: #6397b5;
@@ -166,7 +168,7 @@ h2 ~ p {
   height: 100vh;
   padding-top: 10vh;
 }
-.full-hero:after {
+.full-hero::after {
   bottom: 2vh;
   color: #fff;
   content: "﹀";
@@ -260,14 +262,12 @@ h2 ~ p {
   overflow: hidden;
 }
 .bio-box {
-  border: 1px solid black;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
   margin: 6rem 0 0;
   padding: 0 3%;
   width: 33%;
-
 }
 .bio-box h3 {
   color: #fff;
